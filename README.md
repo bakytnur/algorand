@@ -1,5 +1,6 @@
 # algorand
-Test code:
+Following is a Javascript guide on algorand blockchain.
+It includes exercises on how to:
 <ol>
   <li>Create an account</li>
   <li>Create a transaction</li>
@@ -9,3 +10,5 @@ Test code:
   <li>Send an NFT transaction</li>
 </ol>
 
+# to be added
+Fractional NFTs
