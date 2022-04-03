@@ -23,9 +23,9 @@ async function createAsset(algodClient, account) {
     // Whether user accounts will need to be unfrozen before transacting    
     const defaultFrozen = false;
     // Used to display asset units to user    
-    const unitName = "Bakha Art";
+    const unitName = "BakhaArt";
     // Friendly name of the asset    
-    const assetName = "Chocolate Cake@1";
+    const assetName = "Choco@1";
     // Optional string pointing to a URL relating to the asset
     const url = "https://github.com/bakytnur/algorand/blob/main/NFT/metadata.json";
     // Optional hash commitment of some sort relating to the asset. 32 character length.
@@ -38,7 +38,7 @@ async function createAsset(algodClient, account) {
     // by the current manager
     // Specified address can change reserve, freeze, clawback, and manager
     // If they are set to undefined at creation time, you will not be able to modify these later
-    const managerAddr = getAccount(); // OPTIONAL: FOR DEMO ONLY, USED TO DESTROY ASSET WITHIN
+    const managerAddr = account.addr; // OPTIONAL: FOR DEMO ONLY, USED TO DESTROY ASSET WITHIN
     // Specified address is considered the asset reserve
     // (it has no special privileges, this is only informational)
     const reserveAddr = undefined;
@@ -88,7 +88,7 @@ async function createAsset(algodClient, account) {
 
     // signing and sending "txn" allows "addr" to create an asset 
     const txn = algosdk.makeAssetCreateTxnWithSuggestedParamsFromObject({
-        from: getAccount(),
+        from: account.addr,
         total,
         decimals,
         assetName,
@@ -161,16 +161,15 @@ const printAssetHolding = async function (algodClient, account, assetid) {
 
 async function createNFT() {
     try {
-        let account = createAccount();
-        console.log("Press any key when the account is funded");
-        await keypress();
+        let account = getAccount();
+
         // Connect your client
-        // const algodToken = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
-        // const algodServer = 'http://localhost';
-        // const algodPort = 4001;
-        const algodToken = '2f3203f21e738a1de6110eba6984f9d03e5a95d7a577b34616854064cf2c0e7b';
-        const algodServer = 'https://academy-algod.dev.aws.algodev.network';
-        const algodPort = 443;
+        const algodToken = 'aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa';
+        const algodServer = 'http://localhost';
+        const algodPort = 4001;
+        // const algodToken = '2f3203f21e738a1de6110eba6984f9d03e5a95d7a577b34616854064cf2c0e7b';
+        // const algodServer = 'https://academy-algod.dev.aws.algodev.network';
+        // const algodPort = 443;
 
         let algodClient = new algosdk.Algodv2(algodToken, algodServer, algodPort);
 

@@ -2,7 +2,7 @@
     "name": "Bakha Art",
     "description": "Bakha's art collections",
     "image": "https://github.com/bakytnur/algorand/blob/main/images/nft1.png",
-    "image_integrity": "sha256-/tih/7ew0eziEZIVD4qoTWb0YrElAuRG3b40SnEstyk=",
+    "image_integrity": "sha256-dCPRAsPF+uuxzgsYWSthi1IC8pNY2mgYSDbgSwfFvsk=",
     "properties": {
         "simple_property": "First artwork",
         "rich_property": {
