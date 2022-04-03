@@ -117,8 +117,8 @@ async function createAsset(algodClient, account) {
     await printAssetHolding(algodClient, account.addr, assetID);
     console.log("You can verify the metadata-hash above in the asset creation details");
     console.log("Using terminal the Metadata hash should appear as identical to the output of");
-    console.log("cat accountAssetMetaData.json | openssl dgst -sha256 -binary | openssl base64 -A");
-    console.log("That is: Cii04FOHWE4NiXQ4s4J02we2gnJop5dOfdkBvUoGHQ8=");
+    console.log("cat NFT/metadata.json | openssl dgst -sha256 -binary | openssl base64 -A");
+    console.log("That is: VsNp8PnOVEvBrGut5DDf20K9R6JCubVxafw9uUAn2L4=");
 
     return { assetID };
 }
