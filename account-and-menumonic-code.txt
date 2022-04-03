@@ -1,5 +1,0 @@
-Account Address = 244X4LC5OSJ5IRE7U6LSOQCZZHGEQT7BSPIYS2WJ3WBKRSZXXNGLC4P2DQ
-Account Mnemonic = energy cook grow reunion wink any tragic start home repair nice oval shiver move balance rotate ecology seat three boss chase small across able defy
-
-Account Address = 375WHVHRAUDHMTLWDEOEEWNE4TYXE6AITXUG4Q5KFL5I3UZL3Z6RRIALOI
-Account Mnemonic = horse satisfy ticket zebra lesson supreme drive drill anchor vague grain empty skate coffee fat any find until absurd father cable knee thrive able table
